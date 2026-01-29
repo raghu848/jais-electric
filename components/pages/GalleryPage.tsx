@@ -11,7 +11,7 @@ import { blurDataURL } from "@/components/lib/imagePlaceholders";
 type GalleryCategory = "Residential" | "Commercial" | "Industrial" | "EV";
 type GalleryItem = { id: string; category: GalleryCategory; src: string; title: string };
 
-export function GalleryPage() {
+export function GalleryPage({ ssr = false }: { ssr?: boolean }) {
   // Use images from public/images folder that are not used in services section
   // Plus add EV images from public/new_images
   const actualImages = [
@@ -29,16 +29,12 @@ export function GalleryPage() {
     { src: "/new_images/ev-3.jpeg", category: "EV" as GalleryCategory, title: "EV Charging Network" },
   ];
 
-  const items = useMemo<GalleryItem[]>(
-    () =>
-      actualImages.map((img, i) => ({
-        id: `g${i + 1}`,
-        category: img.category,
-        src: img.src,
-        title: img.title,
-      })),
-    []
-  );
+  const items = actualImages.map((img, i) => ({
+    id: `g${i + 1}`,
+    category: img.category,
+    src: img.src,
+    title: img.title,
+  }));
 
   const [cat, setCat] = useState<GalleryCategory | "All">("All");
   const [open, setOpen] = useState<GalleryItem | null>(null);

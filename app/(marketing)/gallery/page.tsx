@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 };
 
 export default function Gallery() {
-  return <GalleryPage />;
+  return <GalleryPage ssr={true} />;
 }
 
 
