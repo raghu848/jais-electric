@@ -12,7 +12,7 @@ export function Footer() {
           {/* Business Info */}
           <div>
             <h3 className="text-base sm:text-lg font-bold text-[#0A192F] mb-3 sm:mb-4 font-[family-name:var(--font-poppins)]">Jais Electric</h3>
-            <p className="text-gray-600 mb-4">
+            <p className="text-gray-600 mb-4 font-[family-name:var(--font-oswald)]">
               Professional electrical services for residential, commercial, and industrial clients.
             </p>
             <div className="space-y-2">
@@ -103,12 +103,12 @@ export function Footer() {
           {/* Contact Form Preview */}
           <div>
             <h3 className="text-base sm:text-lg font-bold text-[#0A192F] mb-3 sm:mb-4 font-[family-name:var(--font-poppins)]">Get a Quote</h3>
-            <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">
+            <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4 font-[family-name:var(--font-oswald)]">
               Need electrical work done? Contact us for a free estimate.
             </p>
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 px-4 py-2 bg-[#F07F22] text-[#0A192F] font-semibold rounded-md hover:bg-[#F9B983] transition-colors"
+              className="inline-flex items-center gap-2 px-4 py-2 bg-[#F07F22] text-[#0A192F] font-semibold rounded-md hover:bg-[#F9B983] transition-colors font-[family-name:var(--font-oswald)]"
             >
               Contact Us
               <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">

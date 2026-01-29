@@ -70,7 +70,7 @@ export function Navbar() {
             className={cn(
               "rounded-lg bg-gradient-to-r from-[#F07F22] to-[#F9B983] px-6 py-3 text-base font-black text-[#0A192F] shadow-lg shadow-[#F07F22]/30",
               "transition-all duration-300 hover:from-[#F9B983] hover:to-[#F07F22] hover:shadow-xl hover:shadow-[#F07F22]/50 hover:-translate-y-0.5",
-              "transform motion-safe:hover:scale-105"
+              "transform motion-safe:hover:scale-105 font-[family-name:var(--font-oswald)]"
             )}
           >
             Get a Quote
@@ -109,7 +109,7 @@ export function Navbar() {
               })}
               <a
                 href={siteConfig.phoneHref}
-                className="rounded-md bg-[#F07F22] px-3 py-2 text-sm font-extrabold text-[#0A192F] text-center hover:bg-[#F9B983]"
+                className="rounded-md bg-[#F07F22] px-3 py-2 text-sm font-extrabold text-[#0A192F] text-center hover:bg-[#F9B983] font-[family-name:var(--font-oswald)]"
               >
                 Call {siteConfig.phone}
               </a>

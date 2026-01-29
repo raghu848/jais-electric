@@ -85,7 +85,7 @@ export function ServicesGrid() {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-4 font-[family-name:var(--font-poppins)]">
             Professional Electrical Solutions
           </h2>
-          <p className="text-lg sm:text-xl text-[#BAE6FD] max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl text-[#BAE6FD] max-w-2xl mx-auto font-[family-name:var(--font-oswald)]">
             From residential to commercial, industrial to EV charging—we deliver quality electrical work with precision and care.
           </p>
         </div>
@@ -125,7 +125,7 @@ export function ServicesGrid() {
                 )}
                 
                 <h3 className="text-xl font-bold text-white mb-2 flex-shrink-0">{service.title}</h3>
-                <p className="text-[#BAE6FD] mb-4 flex-shrink-0">{service.description}</p>
+                <p className="text-[#BAE6FD] mb-4 flex-shrink-0 font-[family-name:var(--font-oswald)]">{service.description}</p>
                 
                 <ul className="space-y-1.5 mb-6 flex-grow">
                   {service.features.map((feature, featIdx) => (
@@ -138,7 +138,7 @@ export function ServicesGrid() {
                 
                 <Link 
                   href={service.href}
-                  className="mt-auto inline-flex items-center gap-2 px-4 py-2 bg-[#F07F22] text-[#0A192F] font-semibold rounded-md hover:bg-[#F9B983] transition-colors"
+                  className="mt-auto inline-flex items-center gap-2 px-4 py-2 bg-[#F07F22] text-[#0A192F] font-semibold rounded-md hover:bg-[#F9B983] transition-colors font-[family-name:var(--font-oswald)]"
                 >
                   Learn More
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">

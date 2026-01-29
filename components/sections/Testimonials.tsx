@@ -56,7 +56,7 @@ export function Testimonials() {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-4 font-[family-name:var(--font-poppins)]">
             What Our Clients Say
           </h2>
-          <p className="text-lg sm:text-xl text-[#BAE6FD] max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl text-[#BAE6FD] max-w-2xl mx-auto font-[family-name:var(--font-oswald)]">
             Don't just take our word for it—here's what our satisfied customers have to say.
           </p>
         </div>
@@ -76,7 +76,7 @@ export function Testimonials() {
                   ))}
                 </div>
                 
-                <p className="text-[#BAE6FD] mb-6 italic">"{testimonial.content}"</p>
+                <p className="text-[#BAE6FD] mb-6 italic font-[family-name:var(--font-oswald)]">"{testimonial.content}"</p>
                 
                 <div>
                   <div className="font-bold text-white">{testimonial.name}</div>

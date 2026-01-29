@@ -8,13 +8,13 @@ export function CtaBanner() {
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#F07F22] font-[family-name:var(--font-poppins)] mb-4 sm:mb-6">
           Ready to Get Started?
         </h2>
-        <p className="text-lg sm:text-xl text-[#BAE6FD] mb-6 sm:mb-8">
+        <p className="text-lg sm:text-xl text-[#BAE6FD] mb-6 sm:mb-8 font-[family-name:var(--font-oswald)]">
           Contact us today for a free consultation and quote
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4">
           <Link
             href="/contact"
-            className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#F07F22] text-[#0A192F] font-bold rounded-xl hover:bg-[#F9B983] transition-all shadow-lg"
+            className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#F07F22] text-[#0A192F] font-bold rounded-xl hover:bg-[#F9B983] transition-all shadow-lg font-[family-name:var(--font-oswald)]"
           >
             Contact Us
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -23,7 +23,7 @@ export function CtaBanner() {
           </Link>
           <Link
             href="/about"
-            className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-transparent text-[#BAE6FD] font-bold rounded-xl border-2 border-[#F07F22] hover:bg-[#F07F22]/10 transition-all"
+            className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-transparent text-[#BAE6FD] font-bold rounded-xl border-2 border-[#F07F22] hover:bg-[#F07F22]/10 transition-all font-[family-name:var(--font-oswald)]"
           >
             Learn More About Us
           </Link>
