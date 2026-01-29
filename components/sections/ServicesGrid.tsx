@@ -1,0 +1,155 @@
+"use client";
+
+import { useMemo } from "react";
+import { Wrench, Zap, Lightbulb, Home, Building, Car, Factory, Award, ShieldCheck, Timer, Sparkles } from "lucide-react";
+import Link from "next/link";
+import Image from "next/image";
+import { Section3D } from "../sections/Section3D";
+import { cn } from "../lib/cn";
+import { blurDataURL } from "../lib/imagePlaceholders";
+
+interface Service {
+  title: string;
+  description: string;
+  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
+  image: string;
+  href: string;
+  features: string[];
+  gradient: string;
+}
+
+export function ServicesGrid() {
+  const services = useMemo<Service[]>(
+    () => [
+      {
+        title: "Residential",
+        description: "Complete home electrical services",
+        icon: Home,
+        image: "/new_images/hero-house.jpg",
+        href: "/services#residential",
+        features: [
+          "Custom homes", "New Installs", "Renovations", "Troubleshooting", 
+          "Solar", "Generators", "Pot lights", "Pool/Hot Tub hookups", 
+          "Custom Homes"
+        ],
+        gradient: "from-[#0C4A6E] to-[#14B8A6]",
+      },
+      {
+        title: "Commercial",
+        description: "Office & retail electrical solutions",
+        icon: Building,
+        image: "/new_images/download.jpeg",
+        href: "/services#commercial",
+        features: [
+          "Commercial Electrical", "New installs", "Renovations", "Troubleshooting", 
+          "Solar", "Generators", "Pot lights", "Lighting retrofits", "Maintenance", 
+          "Fire Alarm"
+        ],
+        gradient: "from-[#0F766E] to-[#2DD4BF]",
+      },
+      {
+        title: "EV Charging",
+        description: "Electric vehicle charging solutions",
+        icon: Car,
+        image: "/new_images/ev-1.jpg",
+        href: "/services#ev-charging",
+        features: [
+          "EV Chargers" , "Electric car charger installations for your Home", "Office", "Parking lot", "and more."
+        ],
+        gradient: "from-[#0F766E] to-[#2DD4BF]",
+      },
+      {
+        title: "Industrial",
+        description: "Factory & manufacturing systems",
+        icon: Factory,
+        image: "/new_images/images.jpeg",
+        href: "/services#industrial",
+        features: [
+          "Service", "New installs", "Renos", "Troubleshooting", 
+          "Solar", "Generators", "Lighting retrofits", "Maintenance", 
+          "Fire Alarm", "Service"
+        ],
+        gradient: "from-[#0C4A6E] to-[#0F766E]",
+      },
+    ],
+    []
+  );
+
+  return (
+    <Section3D className="py-20 sm:py-24 bg-gradient-to-br from-[#0C4A6E] via-[#0A192F] to-[#0C4A6E]">
+      <div className="mx-auto max-w-6xl px-4">
+        <div className="text-center mb-16">
+          <div className="inline-block px-4 py-2 rounded-full bg-gradient-to-r from-[#F07F22] to-[#ac8361] text-[#0A192F] text-xs font-bold uppercase tracking-wider mb-4 shadow-lg border border-[#F07F22]/30 sm:px-6 sm:py-3 sm:text-sm">
+            Our Services
+          </div>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-4 font-[family-name:var(--font-poppins)]">
+            Professional Electrical Solutions
+          </h2>
+          <p className="text-lg sm:text-xl text-[#BAE6FD] max-w-2xl mx-auto">
+            From residential to commercial, industrial to EV charging—we deliver quality electrical work with precision and care.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+          {services.map((service, idx) => (
+            <div
+              key={idx}
+              className={cn(
+                "group relative overflow-hidden rounded-3xl border border-[#F07F22]/20 bg-[#0A192F]/40 backdrop-blur-sm",
+                "hover:border-[#F07F22]/50 transition-all duration-500",
+                "hover:shadow-2xl hover:shadow-[#F07F22]/20",
+                "flex flex-col h-full"
+              )}
+            >
+              <div className="absolute inset-0 bg-gradient-to-br from-[#0C4A6E]/20 to-[#0A192F]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              
+              <div className="relative p-6 flex flex-col flex-1">
+                {service.image ? (
+                  <div className="mb-4 flex-shrink-0">
+                    <div className="relative w-full h-32 rounded-xl overflow-hidden">
+                      <Image
+                        src={service.image}
+                        alt={`${service.title} service`}
+                        fill
+                        className="object-cover"
+                        placeholder="blur"
+                        blurDataURL={blurDataURL(800, 600)}
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#0A192F]/60 to-transparent" />
+                    </div>
+                  </div>
+                ) : (
+                  <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${service.gradient} flex items-center justify-center mb-4`}>
+                    <service.icon className="w-6 h-6 text-[#F07F22]" />
+                  </div>
+                )}
+                
+                <h3 className="text-xl font-bold text-white mb-2 flex-shrink-0">{service.title}</h3>
+                <p className="text-[#BAE6FD] mb-4 flex-shrink-0">{service.description}</p>
+                
+                <ul className="space-y-1.5 mb-6 flex-grow">
+                  {service.features.map((feature, featIdx) => (
+                    <li key={featIdx} className="flex items-center gap-3">
+                      <div className="w-1.5 h-1.5 rounded-full bg-[#F07F22]"></div>
+                      <span className="text-[#5EEAD4]">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+                
+                <Link 
+                  href={service.href}
+                  className="mt-auto inline-flex items-center gap-2 px-4 py-2 bg-[#F07F22] text-[#0A192F] font-semibold rounded-md hover:bg-[#F9B983] transition-colors"
+                >
+                  Learn More
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                    <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </Section3D>
+  );
+}

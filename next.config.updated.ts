@@ -9,7 +9,7 @@ const withPWA = withPWAInit({
 });
 
 const nextConfig: NextConfig = {
-  // Add an empty Turbopack config so Next 16 doesn't error
+  // Add an empty Turbopack config so Next 16 doesn’t error
   // when using a webpack-based plugin like next-pwa.
   turbopack: {},
   images: {
@@ -34,17 +34,8 @@ const nextConfig: NextConfig = {
         hostname: "irp-cdn-multiscreensite.com",
         pathname: "/**",
       },
-      {
-        protocol: "https",
-        hostname: "img.freepik.com",
-        pathname: "/**",
-      },
-      {
-        protocol: "https",
-        hostname: "images.squarespace-cdn.com",
-        pathname: "/**",
-      },
     ],
+    unoptimized: true, // Allow all local images
   },
 };
 
