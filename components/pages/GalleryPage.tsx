@@ -15,18 +15,18 @@ export function GalleryPage() {
   // Use images from public/images folder that are not used in services section
   // Plus add EV images from public/new_images
   const actualImages = [
-    { src: "/images/1f3e5cbe-11da-520d-b883-2460ecc02eea.jpg", category: "Residential" as GalleryCategory, title: "Modern Home Wiring" },
-    { src: "/images/249975e3-05af-5098-9ff0-cae99b861321.jpg", category: "Commercial" as GalleryCategory, title: "Office Building Setup" },
-    { src: "/images/2a2b82be-a8e0-5545-b135-ecc463678281.jpg", category: "Industrial" as GalleryCategory, title: "Factory Electrical" },
-    { src: "/images/2f06b749-9cb6-5784-ac0a-7f6695c3917b.jpg", category: "Residential" as GalleryCategory, title: "Luxury Villa Setup" },
-    { src: "/images/6185ea81-4638-58a6-81d5-ed95e6fa857b.jpg", category: "Commercial" as GalleryCategory, title: "Retail Space Lighting" },
-    { src: "/images/8d0f6302-d10f-5196-8444-0f4e343e0457.jpg", category: "Industrial" as GalleryCategory, title: "Industrial Power Systems" },
-    { src: "/images/9b4abb61-8fe9-56b8-91ed-513accf8232c.jpg", category: "EV" as GalleryCategory, title: "EV Charging Station" },
-    { src: "/images/ob.jpg", category: "Commercial" as GalleryCategory, title: "Smart Office Building" },
-    { src: "/images/ab.jpg", category: "Residential" as GalleryCategory, title: "Contemporary Home Integration" },
-    { src: "/new_images/ev-1.jpg", category: "EV" as GalleryCategory, title: "EV Charging Infrastructure" },
-    { src: "/new_images/ev-2.jpg", category: "EV" as GalleryCategory, title: "Electric Vehicle Station" },
-    { src: "/new_images/ev-3.jpeg", category: "EV" as GalleryCategory, title: "EV Charging Network" },
+    { id: "1", src: "/images/1f3e5cbe-11da-520d-b883-2460ecc02eea.jpg", category: "Residential" as GalleryCategory, title: "Modern Home Wiring" },
+    { id: "2", src: "/images/249975e3-05af-5098-9ff0-cae99b861321.jpg", category: "Commercial" as GalleryCategory, title: "Office Building Setup" },
+    { id: "3", src: "/images/2a2b82be-a8e0-5545-b135-ecc463678281.jpg", category: "Industrial" as GalleryCategory, title: "Factory Electrical" },
+    { id: "4", src: "/images/2f06b749-9cb6-5784-ac0a-7f6695c3917b.jpg", category: "Residential" as GalleryCategory, title: "Luxury Villa Setup" },
+    { id: "5", src: "/images/6185ea81-4638-58a6-81d5-ed95e6fa857b.jpg", category: "Commercial" as GalleryCategory, title: "Retail Space Lighting" },
+    { id: "6", src: "/images/8d0f6302-d10f-5196-8444-0f4e343e0457.jpg", category: "Industrial" as GalleryCategory, title: "Industrial Power Systems" },
+    { id: "7", src: "/images/9b4abb61-8fe9-56b8-91ed-513accf8232c.jpg", category: "EV" as GalleryCategory, title: "EV Charging Station" },
+    { id: "8", src: "/images/ob.jpg", category: "Commercial" as GalleryCategory, title: "Smart Office Building" },
+    { id: "9", src: "/images/ab.jpg", category: "Residential" as GalleryCategory, title: "Contemporary Home Integration" },
+    { id: "10", src: "/new_images/ev-1.jpg", category: "EV" as GalleryCategory, title: "EV Charging Infrastructure" },
+    { id: "11", src: "/new_images/ev-2.jpg", category: "EV" as GalleryCategory, title: "Electric Vehicle Station" },
+    { id: "12", src: "/new_images/ev-3.jpeg", category: "EV" as GalleryCategory, title: "EV Charging Network" },
   ];
 
   const items = useMemo<GalleryItem[]>(

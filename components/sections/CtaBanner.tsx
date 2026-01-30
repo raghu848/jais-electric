@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useId } from "react";
 import { Section3D } from "./Section3D";
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, Send, Facebook, Instagram } from "lucide-react";
@@ -14,6 +14,12 @@ export function CtaBanner() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  
+  // Generate unique IDs for form inputs to prevent hydration mismatches
+  const nameId = useId();
+  const emailId = useId();
+  const phoneId = useId();
+  const messageId = useId();
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
@@ -121,6 +127,7 @@ export function CtaBanner() {
                 
                 <div>
                   <input
+                    id={nameId}
                     type="text"
                     name="name"
                     placeholder="Your Name"
@@ -133,6 +140,7 @@ export function CtaBanner() {
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <input
+                    id={emailId}
                     type="email"
                     name="email"
                     placeholder="Email Address"
@@ -142,6 +150,7 @@ export function CtaBanner() {
                     required
                   />
                   <input
+                    id={phoneId}
                     type="tel"
                     name="phone"
                     placeholder="Phone Number"
@@ -153,6 +162,7 @@ export function CtaBanner() {
                 
                 <div>
                   <textarea
+                    id={messageId}
                     name="message"
                     placeholder="Tell us about your project..."
                     value={formData.message}
