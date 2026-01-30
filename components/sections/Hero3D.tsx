@@ -41,8 +41,7 @@ export function Hero3D() {
         className="absolute inset-0 [transform-style:preserve-3d]"
       >
         <Image
-          src={"/new_images/Home.jpg"}
-          srcSet={`/mobile_images/Home_768x1024.jpg 768w, /new_images/Home.jpg 1200w`}
+          src="/new_images/Home.jpg"
           alt="Luxurious residential property with architectural lighting"
           fill
           priority
