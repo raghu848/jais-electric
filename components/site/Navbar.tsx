@@ -11,21 +11,7 @@ import { siteConfig } from "@/components/site/siteConfig";
 
 export function Navbar() {
   const pathname = usePathname();
-  const [isScrolled, setIsScrolled] = useState(false);
   const [open, setOpen] = useState(false);
-
-  useEffect(() => {
-    const onScroll = () => {
-      if (typeof window !== "undefined") {
-        setIsScrolled(window.scrollY > 10);
-      }
-    };
-    onScroll();
-    if (typeof window !== "undefined") {
-      window.addEventListener("scroll", onScroll, { passive: true });
-      return () => window.removeEventListener("scroll", onScroll);
-    }
-  }, []);
 
   useEffect(() => setOpen(false), [pathname]);
 
@@ -39,18 +25,17 @@ export function Navbar() {
     <header
       className={cn(
         "fixed inset-x-0 top-0 z-50 border-b border-[#F07F22]/10",
-        "bg-[rgba(10,25,47,0.75)] backdrop-blur-xl",
-        isScrolled && "bg-[rgba(10,25,47,0.92)] shadow-lg"
+        "bg-[rgba(10,25,47,0.75)] backdrop-blur-xl"
       )}
     >
-      <div className="mx-auto flex h-20 max-w-6xl items-center justify-between px-6">
+      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
         <Link href="/" className="flex items-center gap-3">
           <Image
             src="/new_images/transparent-logo_white.png"
             alt="Jais Electrical Services Ltd Logo"
             width={160}
             height={50}
-            className="h-19 w-auto object-contain"
+            className="h-12 w-auto object-contain"
             priority
           />
         </Link>

@@ -30,28 +30,30 @@ export function GalleryPage() {
   ];
 
   const items = useMemo<GalleryItem[]>(
-    () =>
-      actualImages.map((img, i) => ({
-        id: `g${i + 1}`,
-        category: img.category,
-        src: img.src,
-        title: img.title,
-      })),
-    []
+    () => actualImages.map((it) => ({ ...it, id: it.id })),
+    [actualImages]
   );
 
   const [cat, setCat] = useState<GalleryCategory | "All">("All");
   const [open, setOpen] = useState<GalleryItem | null>(null);
 
-  const filtered = cat === "All" ? items : items.filter((i) => i.category === cat);
+  const filtered = useMemo(
+    () => (cat === "All" ? items : items.filter((it) => it.category === cat)),
+    [cat, items]
+  );
+
+  const categories = useMemo(
+    () => ["All", ...new Set(items.map((it) => it.category))] as const,
+    [items]
+  );
 
   const categoryColors = {
-    All: "from-[#F07F22] to-[#F9B983]",
-    Residential: "from-[#F07F22] to-[#F9B983]",
-    Commercial: "from-[#F07F22] to-[#F9B983]",
-    Industrial: "from-[#F07F22] to-[#F9B983]",
-    EV: "from-[#F07F22] to-[#F9B983]",
-  };
+    Residential: "from-blue-500 to-cyan-400",
+    Commercial: "from-emerald-500 to-teal-400",
+    Industrial: "from-purple-500 to-fuchsia-400",
+    EV: "from-amber-500 to-orange-400",
+    All: "from-slate-600 to-slate-500",
+  } as const;
 
   return (
     <>
@@ -117,7 +119,7 @@ export function GalleryPage() {
             transition={{ delay: 0.4, duration: 0.6 }}
             className="mt-16 flex flex-wrap justify-center gap-3"
           >
-            {(["All", "Residential", "Commercial", "Industrial", "EV"] as const).map((c, idx) => (
+            {categories.map((c, idx) => (
               <motion.button
                 key={c}
                 onClick={() => setCat(c)}
