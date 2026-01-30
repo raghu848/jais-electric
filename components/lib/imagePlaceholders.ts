@@ -15,9 +15,8 @@ export function shimmer(w: number, h: number) {
 }
 
 export function toBase64(str: string) {
-  // Works on both server and client.
-  if (typeof window === "undefined") return Buffer.from(str).toString("base64");
-  return window.btoa(str);
+  // Use Buffer on both server and client for consistency
+  return Buffer.from(str).toString("base64");
 }
 
 export function blurDataURL(w = 1200, h = 800) {

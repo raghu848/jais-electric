@@ -11,9 +11,10 @@ function useCountUp(target: number, start: boolean, durationMs = 900) {
   useEffect(() => {
     if (!start) return;
     let raf = 0;
-    const t0 = performance.now();
-    const step = (t: number) => {
-      const p = Math.min(1, (t - t0) / durationMs);
+    const startTime = Date.now(); // Use Date.now() for consistency
+    const step = () => {
+      const elapsed = Date.now() - startTime;
+      const p = Math.min(1, elapsed / durationMs);
       setValue(Math.round(target * p));
       if (p < 1) raf = requestAnimationFrame(step);
     };

@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 export function PageTransition({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
-  const pathname = usePathname();
+  const pathname = typeof window !== "undefined" ? usePathname() : "/";
 
   return (
     <AnimatePresence mode="wait" initial={false}>
@@ -22,7 +22,3 @@ export function PageTransition({
     </AnimatePresence>
   );
 }
-
-
-
-
