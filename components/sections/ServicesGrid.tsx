@@ -91,25 +91,9 @@ export function ServicesGrid() {
               <div className="absolute inset-0 bg-gradient-to-br from-[#0C4A6E]/20 to-[#0A192F]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               
               <div className="relative p-6 flex flex-col flex-1">
-                {service.image ? (
-                  <div className="mb-4 flex-shrink-0">
-                    <div className="relative w-full h-32 rounded-xl overflow-hidden">
-                      <Image
-                        src={service.image}
-                        alt={`${service.title} service`}
-                        fill
-                        className="object-cover"
-                        placeholder="blur"
-                        blurDataURL={blurDataURL(800, 600)}
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-[#0A192F]/60 to-transparent" />
-                    </div>
-                  </div>
-                ) : (
-                  <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${service.gradient} flex items-center justify-center mb-4`}>
-                    <service.icon className="w-6 h-6 text-[#F07F22]" />
-                  </div>
-                )}
+                <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${service.gradient} flex items-center justify-center mb-4`}>
+                  <service.icon className="w-6 h-6 text-[#F07F22]" />
+                </div>
                 
                 <h3 className="text-xl font-bold text-white mb-2 flex-shrink-0">{service.title}</h3>
                 <p className="text-[#BAE6FD] mb-4 flex-shrink-0">{service.description}</p>
