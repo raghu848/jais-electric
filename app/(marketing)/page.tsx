@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Hero3D } from "@/components/sections/Hero3D";
-import { ServicesGrid } from "@/components/sections/ServicesGrid";
+import { ProfessionalSolutions } from "@/components/sections/ProfessionalSolutions";
 import { StatsBar } from "@/components/sections/StatsBar";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { CtaBanner } from "@/components/sections/CtaBanner";
@@ -15,14 +15,10 @@ export default function HomePage() {
   return (
     <>
       <Hero3D />
-      <ServicesGrid />
+      <ProfessionalSolutions />
       <StatsBar />
       <Testimonials />
       <CtaBanner />
     </>
   );
 }
-
-
-
-

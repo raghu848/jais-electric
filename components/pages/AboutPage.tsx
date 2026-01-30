@@ -3,14 +3,16 @@
 import { useMemo } from "react";
 import { ShieldCheck, Sparkles, Timer, Wrench, Zap, Award, BadgeCheck, Hammer, Lightbulb, Battery, Home, Building, Car, Factory } from "lucide-react";
 import Image from "next/image";
+import { blurDataURL } from "@/components/lib/imagePlaceholders";
 
 export default function AboutPage() {
+
   const timeline = useMemo(
     () => [
       { year: "2008", title: "Founded", text: "Built on safety-first service.", color: "from-[#F07F22] to-[#F9B983]" },
-      { year: "2014", title: "Growth", text: "Expanded commercial capability.", color: "from-[#F07F22] to-[#F9B983]" },
-      { year: "2020", title: "Modernization", text: "Energy + EV readiness.", color: "from-[#F07F22] to-[#F9B983]" },
-      { year: "Today", title: "Trusted", text: "Serving Ontario communities.", color: "from-[#F07F22] to-[#F9B983]" },
+      { year: "2012", title: "Licensed", text: "Full electrical contractor license obtained.", color: "from-[#F07F22] to-[#F9B983]" },
+      { year: "2018", title: "Expansion", text: "Extended services to commercial and industrial sectors.", color: "from-[#F07F22] to-[#F9B983]" },
+      { year: "2022", title: "EV Charging", text: "Added electric vehicle charging station installation.", color: "from-[#F07F22] to-[#F9B983]" },
     ],
     []
   );
@@ -71,8 +73,19 @@ export default function AboutPage() {
                 src="/new_images/about.jpg"
                 alt="About PowerArc Electrical Solutions"
                 fill
-                className="object-cover opacity-60"
-                sizes="100vw"
+                className="hero-bg-image opacity-60 hidden md:block"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                placeholder="blur"
+                blurDataURL={blurDataURL(2400, 1600)}
+              />
+              <Image
+                src="/mobile_images/About_768x550.jpg.jpeg"
+                alt="About PowerArc Electrical Solutions"
+                fill
+                className="hero-bg-image opacity-60 md:hidden"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                placeholder="blur"
+                blurDataURL={blurDataURL(2400, 1600)}
               />
               <div className="absolute inset-0 bg-gradient-to-br from-[#0A192F]/80 via-[#0C4A6E]/60 to-[#0A192F]/80" />
             </div>

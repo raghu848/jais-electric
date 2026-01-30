@@ -21,30 +21,11 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
-        hostname: "lirp.cdn-website.com",
-        pathname: "/**",
-      },
-      {
-        protocol: "https",
-        hostname: "irp-cdn.multiscreensite.com",
-        pathname: "/**",
-      },
-      {
-        protocol: "https",
-        hostname: "irp-cdn-multiscreensite.com",
-        pathname: "/**",
-      },
-      {
-        protocol: "https",
-        hostname: "img.freepik.com",
-        pathname: "/**",
-      },
-      {
-        protocol: "https",
         hostname: "images.squarespace-cdn.com",
         pathname: "/**",
       },
     ],
+    unoptimized: true, // Allow local images from public folder
   },
 };
 

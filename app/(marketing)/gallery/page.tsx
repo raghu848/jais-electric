@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import { GalleryPage } from "@/components/pages/GalleryPage";
 
 export const metadata: Metadata = {
-  title: "Gallery",
+  title: "Portfolio",
   description:
-    "Browse recent electrical work across residential, commercial, industrial, and EV charging categories.",
+    "Browse our electrical project portfolio across residential, commercial, industrial, and EV charging categories.",
 };
 
 export default function Gallery() {
-  return <GalleryPage ssr={true} />;
+  return <GalleryPage />;
 }
 
 

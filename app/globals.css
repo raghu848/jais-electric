@@ -17,8 +17,6 @@
   --font-heading: var(--font-playfair-display);
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
     "Liberation Mono", "Courier New", monospace;
-  --font-button: var(--font-oswald);
-  --font-paragraph: var(--font-oswald);
 }
 
 body {

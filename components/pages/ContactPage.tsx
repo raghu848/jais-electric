@@ -119,17 +119,9 @@ export function ContactPage() {
 
             <div className="bg-[#0C4A6E]/50 backdrop-blur-sm p-8 rounded-2xl border border-[#F07F22]/50">
               <h3 className="font-bold text-white text-xl mb-4 font-heading">Service Areas</h3>
-              <p className="text-[#BAE6FD] mb-4">
-                We proudly serve the following areas:
+              <p className="text-[#BAE6FD]">
+                {siteConfig.serviceAreas}
               </p>
-              <ul className="grid grid-cols-2 gap-2">
-                {siteConfig.serviceAreas.map((area, index) => (
-                  <li key={index} className="flex items-center">
-                    <div className="w-2 h-2 rounded-full bg-[#F07F22] mr-2"></div>
-                    <span className="text-[#5EEAD4]">{area}</span>
-                  </li>
-                ))}
-              </ul>
             </div>
           </motion.div>
 

@@ -16,7 +16,7 @@ type Project = {
   description: string;
 };
 
-export function ProjectsPage({ ssr = false }: { ssr?: boolean }) {
+export function ProjectsPage() {
   // Your actual project images with titles and descriptions
   const actualProjects = [
     {
@@ -77,7 +77,7 @@ export function ProjectsPage({ ssr = false }: { ssr?: boolean }) {
     },
   ];
 
-  const projects = actualProjects;
+  const projects = useMemo<Project[]>(() => actualProjects, []);
 
   const [open, setOpen] = useState<Project | null>(null);
 

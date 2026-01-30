@@ -5,11 +5,10 @@ export const siteConfig = {
   email: "info@jaiselectrical.ca",
   emailHref: "mailto:info@jaiselectrical.ca",
   address: "86 Albert Street, Cambridge, ON N1R 3N5",
-  serviceAreas: [
-    "Greater Toronto Area",
-    "Cambridge",
-    "Kitchener",
-    "Waterloo",
-    "Ontario"
-  ],
+  serviceAreas:
+    "Greater Toronto Area, Cambridge, Kitchener, and surrounding Ontario areas",
 } as const;
+
+
+
+

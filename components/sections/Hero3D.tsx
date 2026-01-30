@@ -41,14 +41,15 @@ export function Hero3D() {
         className="absolute inset-0 [transform-style:preserve-3d]"
       >
         <Image
-          src="/new_images/Home.jpg"
+          src={"/new_images/Home.jpg"}
+          srcSet={`/mobile_images/Home_768x1024.jpg 768w, /new_images/Home.jpg 1200w`}
           alt="Luxurious residential property with architectural lighting"
           fill
           priority
-          className="object-cover opacity-95 brightness-105 contrast-110 grayscale transition-all duration-300 ease-in-out hover:grayscale-0"
+          className="hero-bg-image opacity-95 brightness-105 contrast-110 grayscale transition-all duration-300 ease-in-out hover:grayscale-0"
           placeholder="blur"
           blurDataURL={blurDataURL(2400, 1600)}
-          sizes="100vw"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
         {/* Much lighter overlay so the photo and motion are visible */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(10,25,47,0.3),_transparent_65%)]" />
@@ -72,7 +73,7 @@ export function Hero3D() {
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-            className="text-balance text-4xl font-semibold tracking-tight text-white sm:text-5xl md:text-7xl font-[family-name:var(--font-poppins)]"
+            className="text-balance text-5xl font-semibold tracking-tight text-white md:text-7xl font-[family-name:var(--font-poppins)]"
           >
             Professional Electrical Services
           </motion.h1>
@@ -81,9 +82,9 @@ export function Hero3D() {
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-            className="mt-4 text-pretty text-lg font-semibold leading-7 text-white/85 sm:text-xl md:text-2xl font-heading font-normal"
+            className="mt-6 text-pretty text-xl font-semibold leading-8 text-white/85 md:text-2xl font-heading font-normal"
           >
-            Trusted electricians serving {siteConfig.serviceAreas.join(', ')}
+            Trusted electricians serving {siteConfig.serviceAreas}
           </motion.h2>
 
           {/* Dual CTAs (Amber Force yellow) */}
@@ -91,7 +92,7 @@ export function Hero3D() {
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-            className="mt-8 flex flex-col items-center justify-center gap-3 sm:gap-4 sm:flex-row"
+            className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row"
           >
             <motion.div
               whileHover={{ translateZ: 15, scale: 1.03 }}

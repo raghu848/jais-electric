@@ -47,21 +47,21 @@ const testimonials = [
 
 export function Testimonials() {
   return (
-    <Section3D className="py-16 sm:py-20 bg-gradient-to-br from-[#0C4A6E] via-[#0F766E] to-[#0C4A6E]">
+    <Section3D className="py-20 bg-gradient-to-br from-[#0C4A6E] via-[#0F766E] to-[#0C4A6E]">
       <div className="mx-auto max-w-6xl px-4">
         <div className="text-center mb-16">
-          <div className="inline-block px-4 py-2 rounded-full bg-gradient-to-r from-[#F07F22] to-[#F9B983] text-[#0A192F] text-xs font-bold uppercase tracking-wider mb-4 shadow-lg border border-[#F07F22]/30 sm:px-6 sm:py-3 sm:text-sm">
+          <div className="inline-block px-6 py-3 rounded-full bg-gradient-to-r from-[#F07F22] to-[#F9B983] text-[#0A192F] text-sm font-bold uppercase tracking-wider mb-6 shadow-lg border border-[#F07F22]/30">
             Client Feedback
           </div>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-4 font-[family-name:var(--font-poppins)]">
+          <h2 className="text-4xl md:text-5xl font-black text-white mb-6 font-[family-name:var(--font-poppins)]">
             What Our Clients Say
           </h2>
-          <p className="text-lg sm:text-xl text-[#BAE6FD] max-w-2xl mx-auto font-[family-name:var(--font-oswald)]">
+          <p className="text-xl text-[#BAE6FD] max-w-2xl mx-auto">
             Don't just take our word for it—here's what our satisfied customers have to say.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial, idx) => (
             <div
               key={idx}
@@ -76,7 +76,7 @@ export function Testimonials() {
                   ))}
                 </div>
                 
-                <p className="text-[#BAE6FD] mb-6 italic font-[family-name:var(--font-oswald)]">"{testimonial.content}"</p>
+                <p className="text-[#BAE6FD] mb-6 italic">"{testimonial.content}"</p>
                 
                 <div>
                   <div className="font-bold text-white">{testimonial.name}</div>

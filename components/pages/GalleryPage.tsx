@@ -11,7 +11,7 @@ import { blurDataURL } from "@/components/lib/imagePlaceholders";
 type GalleryCategory = "Residential" | "Commercial" | "Industrial" | "EV";
 type GalleryItem = { id: string; category: GalleryCategory; src: string; title: string };
 
-export function GalleryPage({ ssr = false }: { ssr?: boolean }) {
+export function GalleryPage() {
   // Use images from public/images folder that are not used in services section
   // Plus add EV images from public/new_images
   const actualImages = [
@@ -22,19 +22,23 @@ export function GalleryPage({ ssr = false }: { ssr?: boolean }) {
     { src: "/images/6185ea81-4638-58a6-81d5-ed95e6fa857b.jpg", category: "Commercial" as GalleryCategory, title: "Retail Space Lighting" },
     { src: "/images/8d0f6302-d10f-5196-8444-0f4e343e0457.jpg", category: "Industrial" as GalleryCategory, title: "Industrial Power Systems" },
     { src: "/images/9b4abb61-8fe9-56b8-91ed-513accf8232c.jpg", category: "EV" as GalleryCategory, title: "EV Charging Station" },
-    { src: "/images/0b226c450798410ac541646c86ec31afd840e5beab817a5d84fa821e7db61981ec84c3b4a3f072a7a2e1899c9fb06c6eb8b551f8db220eab6614326af68841b0f5592b2915c9faa0ecb8d0c973ef8f0ae485a6053dcb7719176345997e9e316c.jpg", category: "Commercial" as GalleryCategory, title: "Smart Office Building" },
-    { src: "/images/0b226c450798410ac541646c86ec31afd840e5beab817a5d84fa821e7db61981ec84c3b4a3f072a7a2e1899c9fb06c6eb8b551f8db220eab6614326af68841b0f5592b2915c9faa0ecb8d0c973ef8f0ae485a6053dcb7719176345997e9e316c.jpg", category: "Residential" as GalleryCategory, title: "Contemporary Home Integration" },
+    { src: "/images/ob.jpg", category: "Commercial" as GalleryCategory, title: "Smart Office Building" },
+    { src: "/images/ab.jpg", category: "Residential" as GalleryCategory, title: "Contemporary Home Integration" },
     { src: "/new_images/ev-1.jpg", category: "EV" as GalleryCategory, title: "EV Charging Infrastructure" },
     { src: "/new_images/ev-2.jpg", category: "EV" as GalleryCategory, title: "Electric Vehicle Station" },
     { src: "/new_images/ev-3.jpeg", category: "EV" as GalleryCategory, title: "EV Charging Network" },
   ];
 
-  const items = actualImages.map((img, i) => ({
-    id: `g${i + 1}`,
-    category: img.category,
-    src: img.src,
-    title: img.title,
-  }));
+  const items = useMemo<GalleryItem[]>(
+    () =>
+      actualImages.map((img, i) => ({
+        id: `g${i + 1}`,
+        category: img.category,
+        src: img.src,
+        title: img.title,
+      })),
+    []
+  );
 
   const [cat, setCat] = useState<GalleryCategory | "All">("All");
   const [open, setOpen] = useState<GalleryItem | null>(null);
@@ -90,17 +94,17 @@ export function GalleryPage({ ssr = false }: { ssr?: boolean }) {
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
               transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
-              className="mb-6 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#F07F22]/10 to-[#F9B983]/10 px-6 py-2 backdrop-blur-sm"
+              className="mb-7 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#F07F22]/10 to-[#F9B983]/10 px-6 py-2 backdrop-blur-sm"
             >
               <Sparkles className="h-4 w-4 text-[#F07F22]" />
               <span className="text-sm font-medium tracking-wider text-[#F07F22]">OUR PORTFOLIO</span>
             </motion.div>
             
-            <h1 className="mb-6 bg-gradient-to-r from-white via-slate-200 to-[#F07F22] bg-clip-text font-[family-name:var(--font-poppins)] text-6xl font-bold tracking-tight text-transparent lg:text-5xl">
-              ELECTRIFYING EXELLENCE
+            <h1 className="mb-7 bg-gradient-to-r from-white via-slate-200 to-[#F07F22] bg-clip-text font-[family-name:var(--font-poppins)] text-6xl font-bold tracking-tight text-transparent lg:text-6xl">
+              EXCELLENCE
             </h1>
             
-            <p className="mx-auto max-w-2xl text-lg leading-relaxed text-slate-400">
+            <p className="mx-auto max-w-3xl text-lg leading-relaxed text-slate-400">
               Explore our collection of masterfully executed electrical projects, 
               where precision engineering meets aesthetic innovation
             </p>
