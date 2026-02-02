@@ -82,23 +82,24 @@ export function CtaBanner() {
             </div> */}
             
             {/* Social Media Links */}
-            <div className="flex justify-center lg:justify-end gap-4 mt-8">
+            <div className="flex justify-start gap-4 mt-8 ml-35">
               <a href="https://www.facebook.com/profile.php?id=61586941303806" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                 <Facebook className="h-6 w-6 text-[#F07F22] hover:text-[#F9B983] transition-colors" />
               </a>
               <a href="https://www.instagram.com/jais_electrical?igsh=MWRnMGwyN3JkbGFudA%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                 <Instagram className="h-6 w-6 text-[#F07F22] hover:text-[#F9B983] transition-colors" />
               </a>
-              {/* ECRA License */}
-              <div className="flex items-center gap-2 pl-4 border-l border-[#F07F22]/30">
-                <Image 
-                  src="/mobile_images/liscense.jpeg" 
-                  alt="ECRA License" 
-                  width={302} 
-                  height={350} 
-                  className="rounded"
-                />
-              </div>
+            </div>
+            
+            {/* ECRA License */}
+            <div className="flex items-center gap-2 pl-4 border-l border-[#F07F22]/30 mt-8 justify-center lg:justify-start">
+              <Image 
+                src="/mobile_images/liscense.jpeg" 
+                alt="ECRA License" 
+                width={302} 
+                height={350} 
+                className="rounded"
+              />
             </div>
           </motion.div>
 
