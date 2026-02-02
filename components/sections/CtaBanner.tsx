@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useId } from "react";
+import Image from "next/image";
 import { Section3D } from "./Section3D";
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, Send, Facebook, Instagram } from "lucide-react";
@@ -81,25 +82,23 @@ export function CtaBanner() {
             </div> */}
             
             {/* Social Media Links */}
-            <div className="flex justify-center lg:justify-start gap-4 mt-8">
-              <a
-                href="https://www.facebook.com/profile.php?id=61586941303806"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-12 h-12 rounded-full bg-[#1877F2] flex items-center justify-center hover:bg-[#1877F2]/80 transition-all duration-300 hover:scale-110"
-                aria-label="Facebook"
-              >
-                <Facebook className="w-6 h-6 text-white" />
+            <div className="flex justify-center lg:justify-end gap-4 mt-8">
+              <a href="https://www.facebook.com/profile.php?id=61586941303806" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <Facebook className="h-6 w-6 text-[#F07F22] hover:text-[#F9B983] transition-colors" />
               </a>
-              <a
-                href="https://www.instagram.com/jais_electrical?igsh=MWRnMGwyN3JkbGFudA%3D%3D&utm_source=qr"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-12 h-12 rounded-full bg-gradient-to-r from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] flex items-center justify-center hover:opacity-80 transition-all duration-300 hover:scale-110"
-                aria-label="Instagram"
-              >
-                <Instagram className="w-6 h-6 text-white" />
+              <a href="https://www.instagram.com/jais_electrical?igsh=MWRnMGwyN3JkbGFudA%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <Instagram className="h-6 w-6 text-[#F07F22] hover:text-[#F9B983] transition-colors" />
               </a>
+              {/* ECRA License */}
+              <div className="flex items-center gap-2 pl-4 border-l border-[#F07F22]/30">
+                <Image 
+                  src="/mobile_images/liscense.jpeg" 
+                  alt="ECRA License" 
+                  width={302} 
+                  height={350} 
+                  className="rounded"
+                />
+              </div>
             </div>
           </motion.div>
 

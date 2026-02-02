@@ -28,19 +28,19 @@ export function Navbar() {
         "bg-[rgba(10,25,47,0.75)] backdrop-blur-xl"
       )}
     >
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
+      <div className="mx-auto flex h-20 max-w-6xl items-center justify-between px-6">
         <Link href="/" className="flex items-center gap-3">
           <Image
             src="/new_images/transparent-logo_white.png"
             alt="Jais Electrical Services Ltd Logo"
-            width={160}
-            height={50}
-            className="h-12 w-auto object-contain"
+            width={180}
+            height={60}
+            className="h-19 w-auto object-contain"
             priority
           />
         </Link>
 
-        <nav className="hidden items-center gap-8 md:flex">
+        <nav className="hidden items-center gap-6 md:flex">
           {navLinks.map((l) => {
             const isActive = activeHref === l.href;
             return (

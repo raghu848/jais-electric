@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Mail, MapPin, Phone, Facebook, Instagram } from "lucide-react";
 import { siteConfig } from "@/components/site/siteConfig";
 
@@ -116,6 +117,7 @@ export function Footer() {
                   <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                 </svg>
               </Link>
+              
               <div className="flex gap-3 mt-3">
                 <a href="https://www.facebook.com/profile.php?id=61586941303806" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                   <Facebook className="w-5 h-5 text-[#1877F2]" />
@@ -125,6 +127,25 @@ export function Footer() {
                 </a>
               </div>
             </div>
+          </div>
+        </div>
+        
+
+        {/* ECRA License Information */}
+        <div className="mt-6 pt-6 border-t border-[#F07F22]/10 text-center">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm text-[#0A192F]/180">
+            <div className="flex items-center gap-2">
+              <Image 
+                src="/mobile_images/liscense.jpeg" 
+                alt="ECRA License" 
+                width={190} 
+                height={140} 
+                className="rounded"
+              />
+              <span>ECRA License #: 7018614</span>
+            </div>
+            <span className="hidden sm:inline">•</span>
+            <span>Licensed Electrical Contractor</span>
           </div>
         </div>
 

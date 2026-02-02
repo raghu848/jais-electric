@@ -132,6 +132,47 @@ export default function AboutPage() {
           </div>
         </div>
 
+        {/* Licensed Contractor Section */}
+        <div className="py-16 px-4">
+          <div className="mx-auto max-w-6xl">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              {/* Left side - License Image */}
+              <div className="flex justify-center lg:justify-start">
+                <div className="relative">
+                  <div className="absolute -inset-4 bg-gradient-to-r from-[#F07F22]/20 to-[#F9B983]/20 rounded-2xl blur-xl"></div>
+                  <div className="relative bg-[#0A192F] p-8 rounded-2xl border border-[#F07F22]/30">
+                    <Image 
+                      src="/mobile_images/liscense.jpeg" 
+                      alt="ECRA License" 
+                      width={840} 
+                      height={740} 
+                      className="rounded-lg shadow-2xl"
+                    />
+                  </div>
+                </div>
+              </div>
+              
+              {/* Right side - Text Content */}
+              <div className="text-center lg:text-left">
+                <h2 className="text-4xl font-bold text-white mb-6">Licensed Electrical Contractors</h2>
+                <p className="text-xl text-[#BAE6FD] mb-6 leading-relaxed">
+                  At Jais Electrical Services Ltd, we are proud ECRA licensed electrical contractors (#7018614). 
+                  Our licensed professionals ensure all electrical work meets the highest safety standards and 
+                  complies with all Ontario electrical codes and regulations.
+                </p>
+                <p className="text-xl text-[#5EEAD4] mb-8 leading-relaxed">
+                  Every visitor to our site can trust that our team of certified electricians delivers 
+                  professional, reliable, and code-compliant electrical services for residential, 
+                  commercial, and industrial projects throughout Cambridge and the Greater Toronto Area.
+                </p>
+                <div className="inline-flex items-center gap-3 px-6 py-4 bg-gradient-to-r from-[#F07F22]/20 to-[#F9B983]/20 rounded-lg border border-[#F07F22]/50">
+                  <span className="text-2xl font-bold text-[#F07F22]">ECRA License #: 7018614</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Services Section */}
         <div className="py-16 px-4">
           <div className="mx-auto max-w-6xl">
