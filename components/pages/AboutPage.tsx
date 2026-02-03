@@ -9,10 +9,10 @@ export default function AboutPage() {
 
   const timeline = useMemo(
     () => [
-      { year: "2008", title: "Founded", text: "Built on safety-first service.", color: "from-[#F07F22] to-[#F9B983]" },
-      { year: "2012", title: "Licensed", text: "Full electrical contractor license obtained.", color: "from-[#F07F22] to-[#F9B983]" },
-      { year: "2018", title: "Expansion", text: "Extended services to commercial and industrial sectors.", color: "from-[#F07F22] to-[#F9B983]" },
-      { year: "2022", title: "EV Charging", text: "Added electric vehicle charging station installation.", color: "from-[#F07F22] to-[#F9B983]" },
+      { year: "2016", title: "Founded", text: "Built on safety-first service.", color: "from-[#F07F22] to-[#F9B983]" },
+      { year: "2018", title: "Licensed", text: "Full electrical contractor license obtained.", color: "from-[#F07F22] to-[#F9B983]" },
+      { year: "2020", title: "Expansion", text: "Extended services to commercial and industrial sectors.", color: "from-[#F07F22] to-[#F9B983]" },
+      { year: "2024", title: "EV Charging", text: "Added electric vehicle charging station installation.", color: "from-[#F07F22] to-[#F9B983]" },
     ],
     []
   );
@@ -92,7 +92,7 @@ export default function AboutPage() {
             
             <div className="inline-block mb-6">
               <div className="bg-gradient-to-r from-[#F07F22] to-[#F9B983] text-[#0A192F] text-xs font-bold px-4 py-2 rounded-full uppercase tracking-wider animate-pulse">
-                Established 2008
+                Established 2016
               </div>
             </div>
             <h1 className="text-6xl md:text-8xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-white via-[#F07F22] to-[#F9B983] mb-6 relative z-10 font-[family-name:var(--font-poppins)]">
@@ -166,7 +166,7 @@ export default function AboutPage() {
                   commercial, and industrial projects throughout Cambridge and the Greater Toronto Area.
                 </p>
                 <div className="inline-flex items-center gap-3 px-6 py-4 bg-gradient-to-r from-[#F07F22]/20 to-[#F9B983]/20 rounded-lg border border-[#F07F22]/50">
-                  <span className="text-2xl font-bold text-[#F07F22]">ECRA License #: 7018614</span>
+                  <span className="text-2xl font-bold text-[#F07F22]">ECRA License : #7018614</span>
                 </div>
               </div>
             </div>

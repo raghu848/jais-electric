@@ -50,7 +50,7 @@ export function StatsBar() {
 
   const stats = useMemo(
     () => [
-      { label: "Years Experience", value: 15, suffix: "+" },
+      { label: "Years Experience", value: 10, suffix: "+" },
       { label: "Projects Completed", value: 500, suffix: "+" },
       { label: "Satisfaction", value: 100, suffix: "%" },
       { label: "Emergency Service", value: 24, suffix: "/7" },

@@ -142,7 +142,7 @@ export function Footer() {
                 height={140} 
                 className="rounded"
               />
-              <span>ECRA License #: 7018614</span>
+              <span>ECRA License : #7018614</span>
             </div>
             <span className="hidden sm:inline">•</span>
             <span>Licensed Electrical Contractor</span>
