@@ -50,7 +50,7 @@ export function ContactPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-5xl md:text-6xl font-black text-white mb-6 font-[family-name:var(--font-poppins)]"
+            className="text-5xl md:text-6xl font-bold text-white mb-6 font-[family-name:var(--font-poppins)]"
           >
             Contact Us
           </motion.h1>
@@ -73,14 +73,14 @@ export function ContactPage() {
             className="space-y-10"
           >
             <div>
-              <h2 className="text-2xl font-bold text-white mb-8 font-heading">Contact Information</h2>
+              <h2 className="text-2xl font-semibold text-white mb-8 font-heading">Contact Information</h2>
               <div className="space-y-8">
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-[#0C4A6E] flex items-center justify-center border border-[#F07F22]/50">
                     <Phone className="w-6 h-6 text-[#F07F22]" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-white text-lg">Call Us</h3>
+                    <h3 className="font-semibold text-white text-lg">Call Us</h3>
                     <a 
                       href={siteConfig.phoneHref} 
                       className="text-[#5EEAD4] hover:text-[#F07F22] transition-colors font-semibold text-lg"
@@ -95,7 +95,7 @@ export function ContactPage() {
                     <Mail className="w-6 h-6 text-[#F07F22]" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-white text-lg">Email Us</h3>
+                    <h3 className="font-semibold text-white text-lg">Email Us</h3>
                     <a 
                       href={`mailto:${siteConfig.email}`} 
                       className="text-[#5EEAD4] hover:text-[#F07F22] transition-colors font-semibold text-lg"
@@ -110,7 +110,7 @@ export function ContactPage() {
                     <MapPin className="w-6 h-6 text-[#F07F22]" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-white text-lg">Visit Us</h3>
+                    <h3 className="font-semibold text-white text-lg">Visit Us</h3>
                     <p className="text-[#5EEAD4] font-semibold text-lg">{siteConfig.address}</p>
                   </div>
                 </div>
@@ -118,7 +118,7 @@ export function ContactPage() {
             </div>
 
             <div className="bg-[#0C4A6E]/50 backdrop-blur-sm p-8 rounded-2xl border border-[#F07F22]/50">
-              <h3 className="font-bold text-white text-xl mb-4 font-heading">Service Areas</h3>
+              <h3 className="font-semibold text-white text-xl mb-4 font-heading">Service Areas</h3>
               <p className="text-[#BAE6FD]">
                 {siteConfig.serviceAreas}
               </p>
@@ -140,7 +140,7 @@ export function ContactPage() {
                 className="object-cover opacity-10"
               />
             </div>
-            <h2 className="text-2xl font-bold text-white mb-8 font-heading">Send a Message</h2>
+            <h2 className="text-2xl font-semibold text-white mb-8 font-heading">Send a Message</h2>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>

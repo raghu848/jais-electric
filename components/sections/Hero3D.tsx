@@ -101,7 +101,7 @@ export function Hero3D() {
               <Link
                 href="/contact"
                 className={cn(
-                  "inline-flex h-12 items-center justify-center rounded-md px-7 text-sm font-extrabold text-[#0A192F]",
+                  "inline-flex h-12 items-center justify-center rounded-md px-7 text-sm font-semibold text-[#0A192F]",
                   "bg-[#F07F22] shadow-[0_18px_45px_rgba(252,211,77,0.22)]",
                   "transition-colors hover:bg-[#F9B983]",
                   "motion-safe:animate-[pulse_2.6s_ease-in-out_infinite]"
@@ -119,7 +119,7 @@ export function Hero3D() {
               <a
                 href={siteConfig.phoneHref}
                 className={cn(
-                  "inline-flex h-12 items-center justify-center rounded-md px-7 text-sm font-extrabold",
+                  "inline-flex h-12 items-center justify-center rounded-md px-7 text-sm font-semibold",
                   "bg-[#F07F22] shadow-[0_18px_45px_rgba(252,211,77,0.22)]",
                   "text-[#0A192F] transition-colors hover:bg-[#F9B983]"
                 )}
@@ -134,7 +134,7 @@ export function Hero3D() {
             {["Residential", "Commercial", "Industrial", "EV"].map((b) => (
               <span
                 key={b}
-                className="rounded-full bg-[#F07F22]/20 px-4 py-2 text-xs font-bold tracking-wide text-[#F07F22] ring-1 ring-[#F07F22]/30 backdrop-blur-md flex items-center gap-2"
+                className="rounded-full bg-[#F07F22]/20 px-4 py-2 text-xs font-semibold tracking-wide text-[#F07F22] ring-1 ring-[#F07F22]/30 backdrop-blur-md flex items-center gap-2"
               >
                 {b === "Residential" && (
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">

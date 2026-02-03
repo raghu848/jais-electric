@@ -85,7 +85,7 @@ export function ProjectsPage() {
     <>
       <Section3D className="py-14">
         <div className="mx-auto max-w-6xl px-4">
-          <h1 className="text-4xl font-black tracking-tight text-white md:text-5xl font-[family-name:var(--font-poppins)] font-normal">
+          <h1 className="text-4xl font-bold tracking-tight text-white md:text-5xl font-[family-name:var(--font-poppins)] font-normal">
             Projects
           </h1>
           <p className="mt-4 max-w-2xl text-sm leading-7 text-[var(--secondary)]">
@@ -180,7 +180,7 @@ export function ProjectsPage() {
               <div className="p-7">
                 <div className="flex flex-wrap items-center justify-between gap-4">
                   <div>
-                    <div className="text-xl font-black text-white font-heading font-normal">
+                    <div className="text-xl font-bold text-white font-heading font-normal">
                       {open.title}
                     </div>
                     <div className="mt-1 text-xs font-extrabold uppercase tracking-widest text-[var(--brand-orange)] font-heading font-normal">

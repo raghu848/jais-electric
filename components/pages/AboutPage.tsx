@@ -95,7 +95,7 @@ export default function AboutPage() {
                 Established 2016
               </div>
             </div>
-            <h1 className="text-6xl md:text-8xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-white via-[#F07F22] to-[#F9B983] mb-6 relative z-10 font-[family-name:var(--font-poppins)]">
+            <h1 className="text-6xl md:text-8xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-white via-[#F07F22] to-[#F9B983] mb-6 relative z-10 font-[family-name:var(--font-poppins)]">
               About Us
             </h1>
             <p className="text-xl md:text-2xl text-[#BAE6FD] max-w-3xl mx-auto leading-relaxed relative z-10">
@@ -110,7 +110,7 @@ export default function AboutPage() {
         {/* Timeline Section */}
         <div className="py-16 px-4">
           <div className="mx-auto max-w-6xl">
-            <h2 className="text-4xl font-bold text-white mb-12 text-center">Our Journey</h2>
+            <h2 className="text-4xl font-semibold text-white mb-12 text-center">Our Journey</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {timeline.map((t, idx) => (
                 <div
@@ -119,10 +119,10 @@ export default function AboutPage() {
                 >
                   <div className="absolute inset-0 bg-gradient-to-br from-[#F07F22]/20 to-[#F9B983]/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500" />
                   <div className="relative bg-[#0C4A6E]/80 backdrop-blur-sm p-8 rounded-2xl border border-[#F07F22]/50 hover:border-[#F9B983]/50 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-[#F07F22]/20">
-                    <div className={`text-5xl font-black bg-gradient-to-br ${t.color} text-transparent bg-clip-text mb-4`}>
+                    <div className={`text-5xl font-bold bg-gradient-to-br ${t.color} text-transparent bg-clip-text mb-4`}>
                       {t.year}
                     </div>
-                    <h3 className="text-2xl font-bold text-white mb-3">{t.title}</h3>
+                    <h3 className="text-2xl font-semibold text-white mb-3">{t.title}</h3>
                     <p className="text-[#BAE6FD]">{t.text}</p>
                     <div className="mt-6 h-1 w-12 bg-gradient-to-r from-[#F07F22] to-[#F9B983] rounded-full" />
                   </div>
@@ -154,7 +154,7 @@ export default function AboutPage() {
               
               {/* Right side - Text Content */}
               <div className="text-center lg:text-left">
-                <h2 className="text-4xl font-bold text-white mb-6">Licensed Electrical Contractors</h2>
+                <h2 className="text-4xl font-semibold text-white mb-6">Licensed Electrical Contractors</h2>
                 <p className="text-xl text-[#BAE6FD] mb-6 leading-relaxed">
                   At Jais Electrical Services Ltd, we are proud ECRA licensed electrical contractors (#7018614). 
                   Our licensed professionals ensure all electrical work meets the highest safety standards and 
@@ -176,7 +176,7 @@ export default function AboutPage() {
         {/* Services Section */}
         <div className="py-16 px-4">
           <div className="mx-auto max-w-6xl">
-            <h2 className="text-4xl font-bold text-white mb-12 text-center">Our Services</h2>
+            <h2 className="text-4xl font-semibold text-white mb-12 text-center">Our Services</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {services.map((service, idx) => (
                 <div
@@ -196,7 +196,7 @@ export default function AboutPage() {
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-[#0A192F] via-[#0A192F]/50 to-transparent" />
                         <div className="absolute bottom-6 left-6 right-6">
-                          <h3 className="text-xl font-bold text-white mb-1">{service.title}</h3>
+                          <h3 className="text-xl font-semibold text-white mb-1">{service.title}</h3>
                           <p className="text-[#F07F22] text-sm font-semibold">{service.description}</p>
                         </div>
                         <div className="absolute top-4 right-4">
@@ -209,7 +209,7 @@ export default function AboutPage() {
                     {/* Back */}
                     <div className="absolute inset-0" style={{ backfaceVisibility: 'hidden', transform: 'rotateY(180deg)' }}>
                       <div className="h-full rounded-2xl bg-gradient-to-br from-[#0C4A6E] to-[#0A192F] p-6 border border-[#F07F22]/50 flex flex-col justify-center items-center text-center">
-                        <h3 className="text-2xl font-bold text-white mb-3">{service.title}</h3>
+                        <h3 className="text-2xl font-semibold text-white mb-3">{service.title}</h3>
                         <p className="text-[#F07F22] font-semibold mb-4">{service.description}</p>
                         <p className="text-[#BAE6FD] text-sm mb-6">
                           Comprehensive electrical solutions tailored to your specific needs and requirements.
@@ -229,7 +229,7 @@ export default function AboutPage() {
         {/* Why Choose Us Section */}
         <div className="py-16 px-4 pb-20">
           <div className="mx-auto max-w-6xl">
-            <h2 className="text-4xl font-bold text-white mb-12 text-center">Why Choose Us</h2>
+            <h2 className="text-4xl font-semibold text-white mb-12 text-center">Why Choose Us</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {why.map((item, idx) => (
                 <div
@@ -241,7 +241,7 @@ export default function AboutPage() {
                     <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${item.gradient} flex items-center justify-center mb-5 shadow-lg`}>
                       <item.icon className="w-7 h-7 text-[#0A192F]" />
                     </div>
-                    <h3 className="text-xl font-bold text-white mb-3">{item.title}</h3>
+                    <h3 className="text-xl font-semibold text-white mb-3">{item.title}</h3>
                     <p className="text-[#BAE6FD]">{item.text}</p>
                   </div>
                 </div>

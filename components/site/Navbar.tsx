@@ -59,7 +59,7 @@ export function Navbar() {
           <Link
             href="/contact"
             className={cn(
-              "rounded-lg bg-gradient-to-r from-[#F07F22] to-[#F9B983] px-7 py-3.5 text-base font-black text-[#0A192F] shadow-lg shadow-[#F07F22]/30",
+              "rounded-lg bg-gradient-to-r from-[#F07F22] to-[#F9B983] px-7 py-3.5 text-base font-bold text-[#0A192F] shadow-lg shadow-[#F07F22]/30",
               "transition-all duration-300 hover:from-[#F9B983] hover:to-[#F07F22] hover:shadow-xl hover:shadow-[#F07F22]/50 hover:-translate-y-0.5",
               "transform motion-safe:hover:scale-105 font-[family-name:var(--font-oswald)]"
             )}

@@ -53,7 +53,7 @@ export function Testimonials() {
           <div className="inline-block px-6 py-3 rounded-full bg-gradient-to-r from-[#F07F22] to-[#F9B983] text-[#0A192F] text-sm font-bold uppercase tracking-wider mb-6 shadow-lg border border-[#F07F22]/30">
             Client Feedback
           </div>
-          <h2 className="text-4xl md:text-5xl font-black text-white mb-6 font-[family-name:var(--font-poppins)]">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-[family-name:var(--font-poppins)]">
             What Our Clients Say
           </h2>
           <p className="text-xl text-[#BAE6FD] max-w-2xl mx-auto">

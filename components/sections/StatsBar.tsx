@@ -34,7 +34,7 @@ function StatItem({
   const v = useCountUp(value, start);
   return (
     <div className="px-4 py-6 sm:px-6 sm:py-8 text-center">
-      <div className="text-3xl sm:text-4xl font-black tracking-tight text-white font-heading">
+      <div className="text-3xl sm:text-4xl font-bold tracking-tight text-white font-heading">
         {v}
         {suffix}
       </div>

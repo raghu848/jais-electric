@@ -58,7 +58,7 @@ export function CtaBanner() {
             transition={{ duration: 0.6 }}
             className="text-center lg:text-left"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-[#F07F22] font-[family-name:var(--font-poppins)] mb-6">
+            <h2 className="text-3xl md:text-4xl font-semibold text-[#F07F22] font-[family-name:var(--font-poppins)] mb-6">
               Ready to Get Started?
             </h2>
             <p className="text-xl text-[#BAE6FD] mb-8">
@@ -118,12 +118,12 @@ export function CtaBanner() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-2">Thank You!</h3>
+                <h3 className="text-2xl font-semibold text-white mb-2">Thank You!</h3>
                 <p className="text-[#BAE6FD]">We'll get back to you soon.</p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
-                <h3 className="text-2xl font-bold text-white mb-6 text-center">Send us a Message</h3>
+                <h3 className="text-2xl font-semibold text-white mb-6 text-center">Send us a Message</h3>
                 
                 <div>
                   <input

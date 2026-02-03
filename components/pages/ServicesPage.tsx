@@ -36,7 +36,7 @@ export function ServicesPage() {
             <div className="inline-block px-6 py-3 rounded-full bg-gradient-to-r from-[#F07F22] to-[#F9B983] text-[#0A192F] text-sm font-bold uppercase tracking-wider mb-6 shadow-lg border border-[#F07F22]">
               Our Services
             </div>
-            <h1 className="text-4xl md:text-6xl font-black tracking-tight text-[#0A192F] font-[family-name:var(--font-poppins)]">
+            <h1 className="text-4xl md:text-6xl font-semibold tracking-tight text-[#0A192F] font-[family-name:var(--font-poppins)]">
               Professional Electrical Solutions
             </h1>
             <p className="mt-6 max-w-2xl mx-auto text-lg text-[#021d1b] leading-relaxed">
@@ -95,7 +95,7 @@ export function ServicesPage() {
                       <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#F07F22] to-[#F9B983] flex items-center justify-center mb-4">
                         <div className="w-5 h-5 rounded-full bg-[#0A192F]/30"></div>
                       </div>
-                      <h2 className="text-2xl md:text-3xl font-bold text-[#0A192F] font-heading mb-2">
+                      <h2 className="text-2xl md:text-3xl font-semibold text-[#0A192F] font-heading mb-2">
                         {c.title}
                       </h2>
                       <p className="text-[#0F766E] text-base mb-4 leading-relaxed">
@@ -150,7 +150,7 @@ export function ServicesPage() {
       {/* Add a call-to-action section */}
       <Section3D className="py-20 bg-gradient-to-r from-[#0C4A6E] to-[#14B8A6]">
         <div className="mx-auto max-w-4xl px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#F07F22] font-[family-name:var(--font-poppins)] mb-6">
+          <h2 className="text-3xl md:text-4xl font-semibold text-[#F07F22] font-[family-name:var(--font-poppins)] mb-6">
             Ready to Get Started?
           </h2>
           <p className="text-xl text-[#BAE6FD] mb-8">
@@ -159,7 +159,7 @@ export function ServicesPage() {
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#F07F22] text-[#0A192F] font-bold rounded-xl hover:bg-[#F9B983] transition-all shadow-lg"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#F07F22] text-[#0A192F] font-semibold rounded-xl hover:bg-[#F9B983] transition-all shadow-lg"
             >
               Contact Us
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -168,7 +168,7 @@ export function ServicesPage() {
             </Link>
             <Link
               href="/about"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-transparent text-[#BAE6FD] font-bold rounded-xl border-2 border-[#F07F22] hover:bg-[#F07F22]/10 transition-all"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-transparent text-[#BAE6FD] font-semibold rounded-xl border-2 border-[#F07F22] hover:bg-[#F07F22]/10 transition-all"
             >
               Learn More About Us
             </Link>

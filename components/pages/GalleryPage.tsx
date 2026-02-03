@@ -102,7 +102,7 @@ export function GalleryPage() {
               <span className="text-sm font-medium tracking-wider text-[#F07F22]">OUR PORTFOLIO</span>
             </motion.div>
             
-            <h1 className="mb-7 bg-gradient-to-r from-white via-slate-200 to-[#F07F22] bg-clip-text font-[family-name:var(--font-poppins)] text-6xl font-bold tracking-tight text-transparent lg:text-6xl">
+            <h1 className="mb-7 bg-gradient-to-r from-white via-slate-200 to-[#F07F22] bg-clip-text font-[family-name:var(--font-poppins)] text-6xl font-semibold tracking-tight text-transparent lg:text-6xl">
               EXCELLENCE
             </h1>
             
@@ -206,7 +206,7 @@ export function GalleryPage() {
                       {/* Category Badge */}
                       <div className="absolute left-4 top-4">
                         <span className={cn(
-                          "inline-flex items-center rounded-full bg-gradient-to-r px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-slate-900 shadow-lg backdrop-blur-sm",
+                          "inline-flex items-center rounded-full bg-gradient-to-r px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-slate-900 shadow-lg backdrop-blur-sm",
                           categoryColors[it.category]
                         )}>
                           {it.category}
@@ -325,7 +325,7 @@ export function GalleryPage() {
                       {open.title}
                     </h3>
                     <span className={cn(
-                      "inline-flex items-center rounded-full bg-gradient-to-r px-3 py-1 text-xs font-bold uppercase tracking-wider text-slate-900",
+                      "inline-flex items-center rounded-full bg-gradient-to-r px-3 py-1 text-xs font-semibold uppercase tracking-wider text-slate-900",
                       categoryColors[open.category]
                     )}>
                       {open.category}
