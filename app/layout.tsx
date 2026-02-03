@@ -44,7 +44,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="manifest" href="/manifest.webmanifest" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon-192x192.png" />
+        <link rel="manifest" href="/new_images/manifest.webmanifest" />
         <meta name="theme-color" content="#0f0f0f" />
       </head>
       <body className={`${inter.variable} ${playfairDisplay.variable} ${dancingScript.variable} ${poppins.variable} antialiased bg-[var(--background)] text-[var(--foreground)]`}>
