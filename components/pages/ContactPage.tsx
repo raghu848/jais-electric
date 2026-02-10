@@ -50,7 +50,7 @@ export function ContactPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-5xl md:text-6xl font-bold text-white mb-6 font-[family-name:var(--font-poppins)]"
+            className="text-5xl md:text-6xl font-light italic text-white mb-6 font-[family-name:var(--font-georgia)]"
           >
             Contact Us
           </motion.h1>
@@ -58,7 +58,7 @@ export function ContactPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-xl text-[#BAE6FD] max-w-2xl mx-auto"
+            className="text-[1.1rem] text-[#BAE6FD] max-w-2xl mx-auto font-[family-name:var(--font-montserrat)] leading-6"
           >
             Have questions about our electrical services? Reach out to us today for a free consultation.
           </motion.p>

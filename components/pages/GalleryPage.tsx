@@ -102,7 +102,7 @@ export function GalleryPage() {
               <span className="text-sm font-medium tracking-wider text-[#F07F22]">OUR PORTFOLIO</span>
             </motion.div>
             
-            <h1 className="mb-7 bg-gradient-to-r from-white via-slate-200 to-[#F07F22] bg-clip-text font-[family-name:var(--font-poppins)] text-6xl font-semibold tracking-tight text-transparent lg:text-6xl">
+            <h1 className="mb-7 bg-gradient-to-r from-white via-slate-200 to-[#F07F22] bg-clip-text font-[family-name:var(--font-georgia)] text-6xl font-light italic tracking-tight text-transparent lg:text-6xl">
               EXCELLENCE
             </h1>
             

@@ -95,13 +95,13 @@ export default function AboutPage() {
                 Established 2016
               </div>
             </div>
-            <h1 className="text-6xl md:text-8xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-white via-[#F07F22] to-[#F9B983] mb-6 relative z-10 font-[family-name:var(--font-poppins)]">
+            <h1 className="text-6xl md:text-8xl font-light italic tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-white via-[#F07F22] to-[#F9B983] mb-6 relative z-10 font-[family-name:var(--font-georgia)]">
               About Us
             </h1>
-            <p className="text-xl md:text-2xl text-[#BAE6FD] max-w-3xl mx-auto leading-relaxed relative z-10">
+            <p className="text-[1.1rem] md:text-[1.1rem] text-[#BAE6FD] max-w-3xl mx-auto leading-6 relative z-10 font-[family-name:var(--font-montserrat)]">
               Jais Electrical Services is your trusted electrical contractor proudly serving the Greater Toronto Area, Cambridge, Kitchener, and surrounding Ontario regions.
             </p>
-            <p className="text-xl md:text-2xl text-[#BAE6FD] max-w-3xl mx-auto leading-relaxed relative z-10 mt-4">
+            <p className="text-[1.1rem] md:text-[1.1rem] text-[#BAE6FD] max-w-3xl mx-auto leading-6 relative z-10 mt-4 font-[family-name:var(--font-montserrat)]">
               Located at 86 Albert Street, Cambridge, ON N1R 3N5, Canada, Jais Electrical delivers comprehensive expertise across residential, commercial, industrial, and EV charging services.
             </p>
           </div>

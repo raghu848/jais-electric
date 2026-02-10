@@ -34,11 +34,11 @@ function StatItem({
   const v = useCountUp(value, start);
   return (
     <div className="px-4 py-6 sm:px-6 sm:py-8 text-center">
-      <div className="text-3xl sm:text-4xl font-bold tracking-tight text-white font-heading">
+      <div className="text-3xl sm:text-4xl font-light italic tracking-tight text-white font-[family-name:var(--font-georgia)]">
         {v}
         {suffix}
       </div>
-      <div className="mt-1 text-xs font-bold uppercase tracking-widest text-[#F07F22] font-heading font-normal sm:mt-2">
+      <div className="mt-1 text-xs font-bold uppercase tracking-widest text-[#F07F22] font-[family-name:var(--font-montserrat)] sm:mt-2">
         {label}
       </div>
     </div>

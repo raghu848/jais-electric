@@ -13,8 +13,8 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-inter);
-  --font-heading: var(--font-playfair-display);
+  --font-sans: var(--font-montserrat);
+  --font-heading: var(--font-georgia);
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
     "Liberation Mono", "Courier New", monospace;
 }
@@ -22,6 +22,153 @@
 body {
   background: var(--background);
   color: var(--foreground);
+  font-family: var(--font-sans), 'Montserrat', sans-serif;
+}
+
+/* Font sizing for headings */
+h1 {
+  font-family: var(--font-heading), 'Georgia', 'Times New Roman', serif;
+  font-size: 2.9rem;
+  font-weight: 600;
+  font-style: italic;
+}
+
+h2 {
+  font-family: var(--font-heading), 'Georgia', 'Times New Roman', serif;
+  font-size: 2.5rem;
+  font-weight: 300;
+  font-style: italic;
+}
+
+h3 {
+  font-family: var(--font-heading), 'Georgia', 'Times New Roman', serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* Section titles */
+section h1,
+section h2,
+section h3 {
+  font-size: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  section h1,
+  section h2,
+  section h3 {
+    font-size: 1.4rem;
+  }
+  
+  h1 {
+    font-size: 2.2rem;
+  }
+  
+  h2 {
+    font-size: 2.0rem;
+  }
+  
+  h3 {
+    font-size: 1.4rem;
+  }
+}
+
+/* Body text */
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Form elements */
+label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+}
+
+input, textarea, select {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+}
+
+/* Buttons */
+button, .btn {
+  font-family: 'Poppins', 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  button, .btn {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  button, .btn {
+    font-size: 0.8rem;
+  }
+}
+
+/* Footer text */
+footer,
+.footer-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  footer,
+  .footer-text {
+    font-size: 0.75rem;
+  }
+}
+
+/* Tab buttons */
+.tab-button {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Social icons */
+.social-icons {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .social-icons {
+    font-size: 1rem;
+  }
+}
+
+/* Copyright */
+.copyright {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .copyright {
+    font-size: 0.7rem;
+  }
+}
+
+/* Responsive scaling for high-resolution displays */
+@media (-webkit-min-device-pixel-ratio: 1.5),
+(min-resolution: 120dpi) {
+  html {
+    font-size: 100%;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 144dpi) {
+  html {
+    font-size: 100%;
+  }
 }
 
 /* Subtle stone grain */

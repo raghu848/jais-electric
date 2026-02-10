@@ -58,10 +58,10 @@ export function CtaBanner() {
             transition={{ duration: 0.6 }}
             className="text-center lg:text-left"
           >
-            <h2 className="text-3xl md:text-4xl font-semibold text-[#F07F22] font-[family-name:var(--font-poppins)] mb-6">
+            <h2 className="text-3xl md:text-4xl font-light italic text-[#F07F22] font-[family-name:var(--font-georgia)] mb-6">
               Ready to Get Started?
             </h2>
-            <p className="text-xl text-[#BAE6FD] mb-8">
+            <p className="text-[1.1rem] text-[#BAE6FD] mb-8 font-[family-name:var(--font-montserrat)]">
               Contact us today for a free consultation and quote. 
               We're here to power your projects with professional excellence.
             </p>
@@ -176,7 +176,7 @@ export function CtaBanner() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full py-4 bg-gradient-to-r from-[#F07F22] to-[#F9B983] text-[#0A192F] font-bold rounded-lg hover:from-[#F9B983] hover:to-[#F07F22] transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center gap-2 disabled:opacity-50 font-[family-name:var(--font-oswald)]"
+                  className="w-full py-4 bg-gradient-to-r from-[#F07F22] to-[#F9B983] text-[#0A192F] font-bold rounded-lg hover:from-[#F9B983] hover:to-[#F07F22] transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center gap-2 disabled:opacity-50 font-[family-name:var(--font-montserrat)] text-[1.1rem] uppercase"
                 >
                   {isSubmitting ? (
                     <>
@@ -201,3 +201,9 @@ export function CtaBanner() {
     </Section3D>
   );
 }
+
+
+
+
+
+

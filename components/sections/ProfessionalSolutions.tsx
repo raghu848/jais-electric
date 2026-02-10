@@ -47,10 +47,10 @@ export function ProfessionalSolutions() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-[family-name:var(--font-poppins)]">
+          <h2 className="text-4xl md:text-5xl font-light italic text-white mb-6 font-[family-name:var(--font-georgia)]">
             Professional Electrical <span className="text-[#F07F22]">Solutions</span>
           </h2>
-          <p className="text-xl text-[#BAE6FD] max-w-3xl mx-auto leading-relaxed">
+          <p className="text-[1.1rem] text-[#BAE6FD] max-w-3xl mx-auto leading-6 font-[family-name:var(--font-montserrat)]">
             Comprehensive electrical services tailored to your specific needs. 
             From residential upgrades to industrial installations, we deliver excellence.
           </p>
@@ -73,7 +73,7 @@ export function ProfessionalSolutions() {
                   <div className="w-16 h-16 rounded-xl bg-gradient-to-r from-[#F07F22] to-[#F9B983] flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
                     <solution.icon className="w-8 h-8 text-[#0A192F]" />
                   </div>
-                  <h3 className="text-2xl font-bold text-white mb-3 font-[family-name:var(--font-poppins)]">
+                  <h3 className="text-2xl font-light italic text-white mb-3 font-[family-name:var(--font-georgia)]">
                     {solution.title}
                   </h3>
                   <p className="text-[#BAE6FD] leading-relaxed">
@@ -111,7 +111,7 @@ export function ProfessionalSolutions() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          <h3 className="text-3xl font-bold text-white mb-4 font-[family-name:var(--font-poppins)]">
+          <h3 className="text-3xl font-light italic text-white mb-4 font-[family-name:var(--font-georgia)]">
             Ready to Get Started?
           </h3>
           <p className="text-xl text-[#BAE6FD] mb-8 max-w-2xl mx-auto">

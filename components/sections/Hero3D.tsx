@@ -77,14 +77,14 @@ export function Hero3D() {
             Professional Electrical Services
           </motion.h1>
 
-          <motion.h2
+          <motion.h3
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-            className="mt-6 text-pretty text-xl font-semibold leading-8 text-white/85 md:text-2xl font-heading font-normal"
+            className="mt-8 text-pretty text-xl font-semibold leading-8 text-white/85 md:text-2xl font-heading font-normal"
           >
-            Trusted electricians serving {siteConfig.serviceAreas}
-          </motion.h2>
+            Trusted electricians serving  {siteConfig.serviceAreas}
+          </motion.h3>
 
           {/* Dual CTAs (Amber Force yellow) */}
           <motion.div
@@ -101,7 +101,7 @@ export function Hero3D() {
               <Link
                 href="/contact"
                 className={cn(
-                  "inline-flex h-12 items-center justify-center rounded-md px-7 text-sm font-semibold text-[#0A192F]",
+                  "inline-flex h-12 items-center justify-center rounded-md px-7 text-[1.1rem] font-bold uppercase text-[#0A192F] font-[family-name:var(--font-montserrat)]",
                   "bg-[#F07F22] shadow-[0_18px_45px_rgba(252,211,77,0.22)]",
                   "transition-colors hover:bg-[#F9B983]",
                   "motion-safe:animate-[pulse_2.6s_ease-in-out_infinite]"
@@ -119,7 +119,7 @@ export function Hero3D() {
               <a
                 href={siteConfig.phoneHref}
                 className={cn(
-                  "inline-flex h-12 items-center justify-center rounded-md px-7 text-sm font-semibold",
+                  "inline-flex h-12 items-center justify-center rounded-md px-7 text-[1.1rem] font-bold uppercase font-[family-name:var(--font-montserrat)]",
                   "bg-[#F07F22] shadow-[0_18px_45px_rgba(252,211,77,0.22)]",
                   "text-[#0A192F] transition-colors hover:bg-[#F9B983]"
                 )}
@@ -134,7 +134,7 @@ export function Hero3D() {
             {["Residential", "Commercial", "Industrial", "EV"].map((b) => (
               <span
                 key={b}
-                className="rounded-full bg-[#F07F22]/20 px-4 py-2 text-xs font-semibold tracking-wide text-[#F07F22] ring-1 ring-[#F07F22]/30 backdrop-blur-md flex items-center gap-2"
+                className="rounded-full bg-[#F07F22]/20 px-4 py-2 text-xs font-bold tracking-wide text-[#F07F22] ring-1 ring-[#F07F22]/30 backdrop-blur-md flex items-center gap-2 font-[family-name:var(--font-montserrat)]"
               >
                 {b === "Residential" && (
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">

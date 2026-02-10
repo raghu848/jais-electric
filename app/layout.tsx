@@ -1,30 +1,19 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display, Dancing_Script, Poppins } from "next/font/google";
+import { Montserrat, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { FloatingCallButton } from "@/components/ui/FloatingCallButton";
 
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800", "900"],
-});
-
-const playfairDisplay = Playfair_Display({
-  variable: "--font-playfair-display",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800", "900"],
-});
-
-const dancingScript = Dancing_Script({
-  variable: "--font-dancing-script",
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
 });
 
-const poppins = Poppins({
-  variable: "--font-poppins",
+const georgia = Playfair_Display({
+  variable: "--font-georgia",
   subsets: ["latin"],
-  weight: ["500", "600"],
+  weight: ["400"],
+  style: ["italic"],
 });
 
 export const metadata: Metadata = {
@@ -52,7 +41,7 @@ export default function RootLayout({
         <link rel="manifest" href="/new_images/manifest.webmanifest" />
         <meta name="theme-color" content="#0f0f0f" />
       </head>
-      <body className={`${inter.variable} ${playfairDisplay.variable} ${dancingScript.variable} ${poppins.variable} antialiased bg-[var(--background)] text-[var(--foreground)]`}>
+      <body className={`${montserrat.variable} ${georgia.variable} antialiased bg-[var(--background)] text-[var(--foreground)]`}>
         {children}
         <FloatingCallButton />
       </body>

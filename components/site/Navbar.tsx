@@ -89,7 +89,7 @@ export function Navbar() {
                     key={l.href}
                     href={l.href}
                     className={cn(
-                      "rounded-lg px-4 py-3 text-lg font-semibold text-[#5EEAD4] ring-1 ring-transparent font-[family-name:var(--font-oswald)]",
+                      "rounded-lg px-4 py-3 text-[1rem] font-semibold text-[#5EEAD4] ring-1 ring-transparent font-[family-name:var(--font-montserrat)]",
                       "hover:bg-[#F07F22]/15 hover:text-[#F07F22]",
                       isActive && "bg-[#F07F22]/25 text-[#F07F22] ring-[#F07F22]/30"
                     )}
@@ -100,7 +100,7 @@ export function Navbar() {
               })}
               <a
                 href={siteConfig.phoneHref}
-                className="rounded-lg bg-[#F07F22] px-4 py-3.5 text-lg font-extrabold text-[#0A192F] text-center hover:bg-[#F9B983] font-[family-name:var(--font-oswald)]"
+                className="rounded-lg bg-[#F07F22] px-4 py-3.5 text-[1.1rem] font-bold uppercase text-[#0A192F] text-center hover:bg-[#F9B983] font-[family-name:var(--font-montserrat)]"
               >
                 Call {siteConfig.phone}
               </a>
