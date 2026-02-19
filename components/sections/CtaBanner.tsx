@@ -22,6 +22,8 @@ export function CtaBanner() {
   const phoneId = useId();
   const messageId = useId();
 
+
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
       ...formData,
@@ -58,7 +60,7 @@ export function CtaBanner() {
             transition={{ duration: 0.6 }}
             className="text-center lg:text-left"
           >
-            <h2 className="text-3xl md:text-4xl font-light italic text-[#F07F22] font-[family-name:var(--font-georgia)] mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#F07F22] font-[family-name:var(--font-montserrat)] mb-6">
               Ready to Get Started?
             </h2>
             <p className="text-[1.1rem] text-[#BAE6FD] mb-8 font-[family-name:var(--font-montserrat)]">
@@ -122,7 +124,7 @@ export function CtaBanner() {
                 <p className="text-[#BAE6FD]">We'll get back to you soon.</p>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-6" suppressHydrationWarning>
                 <h3 className="text-2xl font-semibold text-white mb-6 text-center">Send us a Message</h3>
                 
                 <div>
@@ -201,6 +203,16 @@ export function CtaBanner() {
     </Section3D>
   );
 }
+
+
+
+
+
+
+
+
+
+
 
 
 

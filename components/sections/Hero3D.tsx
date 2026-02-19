@@ -72,19 +72,19 @@ export function Hero3D() {
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-            className="text-balance text-5xl font-semibold tracking-tight text-white md:text-7xl font-[family-name:var(--font-poppins)]"
+            className="text-balance text-5xl font-bold tracking-tight text-white md:text-7xl font-[family-name:var(--font-poppins)]"
           >
             Professional Electrical Services
           </motion.h1>
 
-          <motion.h3
+          <motion.h4
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-            className="mt-8 text-pretty text-xl font-semibold leading-8 text-white/85 md:text-2xl font-heading font-normal"
+            className="mt-9 text-pretty text-xl font-semibold leading-8 text-white/85 md:text-2xl font-heading font-normal"
           >
             Trusted electricians serving  {siteConfig.serviceAreas}
-          </motion.h3>
+          </motion.h4>
 
           {/* Dual CTAs (Amber Force yellow) */}
           <motion.div

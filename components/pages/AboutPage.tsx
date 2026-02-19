@@ -95,7 +95,7 @@ export default function AboutPage() {
                 Established 2016
               </div>
             </div>
-            <h1 className="text-6xl md:text-8xl font-light italic tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-white via-[#F07F22] to-[#F9B983] mb-6 relative z-10 font-[family-name:var(--font-georgia)]">
+            <h1 className="text-6xl md:text-8xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-white via-[#F07F22] to-[#F9B983] mb-6 relative z-10 font-[family-name:var(--font-montserrat)]">
               About Us
             </h1>
             <p className="text-[1.1rem] md:text-[1.1rem] text-[#BAE6FD] max-w-3xl mx-auto leading-6 relative z-10 font-[family-name:var(--font-montserrat)]">

@@ -36,7 +36,7 @@ export function ServicesPage() {
             <div className="inline-block px-6 py-3 rounded-full bg-gradient-to-r from-[#F07F22] to-[#F9B983] text-[#0A192F] text-sm font-bold uppercase tracking-wider mb-6 shadow-lg border border-[#F07F22]">
               Our Services
             </div>
-            <h1 className="text-4xl md:text-6xl font-light italic tracking-tight text-[#0A192F] font-[family-name:var(--font-georgia)]">
+            <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-[#0A192F] font-[family-name:var(--font-montserrat)]">
               Professional Electrical Solutions
             </h1>
             <p className="mt-6 max-w-2xl mx-auto text-[1.1rem] text-[#021d1b] leading-6 font-[family-name:var(--font-montserrat)]">
@@ -150,7 +150,7 @@ export function ServicesPage() {
       {/* Add a call-to-action section */}
       <Section3D className="py-20 bg-gradient-to-r from-[#0C4A6E] to-[#14B8A6]">
         <div className="mx-auto max-w-4xl px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-light italic text-[#F07F22] font-[family-name:var(--font-georgia)] mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#F07F22] font-[family-name:var(--font-montserrat)] mb-6">
             Ready to Get Started?
           </h2>
           <p className="text-xl text-[#BAE6FD] mb-8">

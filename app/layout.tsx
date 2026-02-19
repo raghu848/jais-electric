@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Montserrat, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { FloatingCallButton } from "@/components/ui/FloatingCallButton";
+import { FloatingWhatsApp } from "@/components/ui/FloatingWhatsApp";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -44,6 +45,7 @@ export default function RootLayout({
       <body className={`${montserrat.variable} ${georgia.variable} antialiased bg-[var(--background)] text-[var(--foreground)]`}>
         {children}
         <FloatingCallButton />
+        <FloatingWhatsApp />
       </body>
     </html>
   );

@@ -12,7 +12,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Business Info */}
           <div>
-            <h3 className="text-lg font-light italic text-[#0A192F] mb-4 font-[family-name:var(--font-georgia)]">Jais Electric</h3>
+            <h3 className="text-lg font-bold text-[#0A192F] mb-4 font-[family-name:var(--font-montserrat)]">Jais Electric</h3>
             <p className="text-[0.9rem] text-gray-600 mb-4 font-[family-name:var(--font-montserrat)]">
               Professional electrical services for residential, commercial, and industrial clients.
             </p>
@@ -44,7 +44,7 @@ export function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-light italic text-[#0A192F] mb-4 font-[family-name:var(--font-georgia)]">Quick Links</h3>
+            <h3 className="text-lg font-bold text-[#0A192F] mb-4 font-[family-name:var(--font-montserrat)]">Quick Links</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="/" className="text-gray-600 hover:text-[#F07F22] transition-colors">
@@ -76,7 +76,7 @@ export function Footer() {
 
           {/* Services */}
           <div>
-            <h3 className="text-lg font-light italic text-[#0A192F] mb-4 font-[family-name:var(--font-georgia)]">Services</h3>
+            <h3 className="text-lg font-bold text-[#0A192F] mb-4 font-[family-name:var(--font-montserrat)]">Services</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="/services#residential" className="text-gray-600 hover:text-[#F07F22] transition-colors">
@@ -103,7 +103,7 @@ export function Footer() {
 
           {/* Contact Form Preview */}
           <div>
-            <h3 className="text-lg font-light italic text-[#0A192F] mb-4 font-[family-name:var(--font-georgia)]">Get a Quote</h3>
+            <h3 className="text-lg font-bold text-[#0A192F] mb-4 font-[family-name:var(--font-montserrat)]">Get a Quote</h3>
             <p className="text-[0.9rem] text-gray-600 mb-4 font-[family-name:var(--font-montserrat)]">
               Need electrical work done? Contact us for a free estimate.
             </p>
@@ -159,6 +159,16 @@ export function Footer() {
     </footer>
   );
 }
+
+
+
+
+
+
+
+
+
+
 
 
 

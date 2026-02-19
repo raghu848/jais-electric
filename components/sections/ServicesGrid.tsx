@@ -69,7 +69,7 @@ export function ServicesGrid() {
           <div className="inline-block px-6 py-3 rounded-full bg-gradient-to-r from-[#F07F22] to-[#ac8361] text-[#0A192F] text-sm font-bold uppercase tracking-wider mb-6 shadow-lg border border-[#F07F22]/30">
             Our Services
           </div>
-          <h2 className="text-4xl md:text-5xl font-light italic text-white mb-6 font-[family-name:var(--font-georgia)]">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-[family-name:var(--font-montserrat)]">
             Professional Electrical Solutions
           </h2>
           <p className="text-[1.1rem] leading-6 text-[#BAE6FD] max-w-2xl mx-auto font-[family-name:var(--font-montserrat)]">
@@ -95,7 +95,7 @@ export function ServicesGrid() {
                   <service.icon className="w-6 h-6 text-[#F07F22]" />
                 </div>
                 
-                <h3 className="text-xl font-light italic text-white mb-2 flex-shrink-0 font-[family-name:var(--font-georgia)]">{service.title}</h3>
+                <h3 className="text-xl font-light text-white mb-2 flex-shrink-0 font-[family-name:var(--font-montserrat)]">{service.title}</h3>
                 <p className="text-[0.9rem] text-[#BAE6FD] mb-4 flex-shrink-0 font-[family-name:var(--font-montserrat)]">{service.description}</p>
                 
                 <ul className="space-y-1.5 mb-6 flex-grow">

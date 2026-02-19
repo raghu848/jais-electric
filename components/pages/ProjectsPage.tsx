@@ -85,7 +85,7 @@ export function ProjectsPage() {
     <>
       <Section3D className="py-14">
         <div className="mx-auto max-w-6xl px-4">
-          <h1 className="text-4xl font-light italic tracking-tight text-white md:text-5xl font-[family-name:var(--font-georgia)] font-normal">
+          <h1 className="text-4xl font-bold tracking-tight text-white md:text-5xl font-[family-name:var(--font-montserrat)]">
             Projects
           </h1>
           <p className="mt-4 max-w-2xl text-sm leading-7 text-[var(--secondary)]">
